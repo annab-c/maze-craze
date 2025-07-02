@@ -909,7 +909,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: eb3cb8225a5113a439aa17f10f072fd5, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  moveSpeed: 0.2
+  moveSpeed: 0.25
   turnSpeed: 140
   gravity: -9.81
 --- !u!143 &4265973931658712120
@@ -931,7 +931,7 @@ CharacterController:
   m_Enabled: 1
   serializedVersion: 3
   m_Height: 1.22
-  m_Radius: 0.26
+  m_Radius: 0.2
   m_SlopeLimit: 20
   m_StepOffset: 0.05
   m_SkinWidth: 0.08
@@ -1366,7 +1366,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 433faa8b758afed4f9295b193c697276, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _PixelationFactor: 0.8
+  _PixelationFactor: 0.543
   _ColorEmulationMode: 3
   _FullscreenColorDepth: {x: 256, y: 256, z: 256}
   _FullscreenDitherDepth: {x: 32, y: 32, z: 32}
