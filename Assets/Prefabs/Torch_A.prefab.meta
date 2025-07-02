@@ -1,5 +1,5 @@
 fileFormatVersion: 2
-guid: d5e13ff61ac964a0b9fcafe6ff3feca3
+guid: a8ad31da5d47353469f82df604821ab0
 PrefabImporter:
   externalObjects: {}
   userData: 
@@ -10,5 +10,5 @@ AssetOrigin:
   productId: 295430
   packageName: Dungeon Modular Pack
   packageVersion: 1.0
-  assetPath: Assets/DungeonModularPack/Prefabs/Torch_A.prefab
+  assetPath: Assets/Prefabs/Torch_A.prefab
   uploadId: 694981

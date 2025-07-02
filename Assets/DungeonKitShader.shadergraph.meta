@@ -1,5 +1,5 @@
 fileFormatVersion: 2
-guid: 16ac47740bd3f4f7abd9a7ac3764080a
+guid: 25acb326d5f33cb4ab9975bc23168f2c
 ScriptedImporter:
   internalIDToNameTable: []
   externalObjects: {}
@@ -13,5 +13,5 @@ AssetOrigin:
   productId: 295430
   packageName: Dungeon Modular Pack
   packageVersion: 1.0
-  assetPath: Assets/DungeonModularPack/Shaders/DungeonKitShader.shadergraph
+  assetPath: Assets/DungeonKitShader.shadergraph
   uploadId: 694981
