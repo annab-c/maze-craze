@@ -1,0 +1,15 @@
+fileFormatVersion: 2
+guid: 0cdbbd4071deb884a990d7cf41f1e5a9
+NativeFormatImporter:
+  externalObjects: {}
+  mainObjectFileID: 2100000
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 259641
+  packageName: Simple Modular Dungeon
+  packageVersion: 2.0
+  assetPath: Assets/Simple Modular Dungeon/Components/Materials/Mats/JailSeat001.mat
+  uploadId: 708867

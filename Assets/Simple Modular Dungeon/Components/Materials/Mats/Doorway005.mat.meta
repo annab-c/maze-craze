@@ -1,0 +1,15 @@
+fileFormatVersion: 2
+guid: 3e4a05c6c5e89a1458fa3dc9e0e75123
+NativeFormatImporter:
+  externalObjects: {}
+  mainObjectFileID: 2100000
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 259641
+  packageName: Simple Modular Dungeon
+  packageVersion: 2.0
+  assetPath: Assets/Simple Modular Dungeon/Components/Materials/Mats/Doorway005.mat
+  uploadId: 708867

@@ -1,0 +1,15 @@
+fileFormatVersion: 2
+guid: 605dc6f9fcf93464e871ed16db05dc78
+PrefabImporter:
+  externalObjects: {}
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 259641
+  packageName: Simple Modular Dungeon
+  packageVersion: 2.0
+  assetPath: Assets/Simple Modular Dungeon/Prefabs/Light Sources/Fire_Animated/Lit_StoneChalice
+    Parent 001.prefab
+  uploadId: 708867

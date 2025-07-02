@@ -1,0 +1,15 @@
+fileFormatVersion: 2
+guid: 6a02385b31b761448b50adf9f82bb0e9
+PrefabImporter:
+  externalObjects: {}
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 259641
+  packageName: Simple Modular Dungeon
+  packageVersion: 2.0
+  assetPath: Assets/Simple Modular Dungeon/Prefabs/Structuring/Arch & Pillars/Arch
+    001 Parent.prefab
+  uploadId: 708867

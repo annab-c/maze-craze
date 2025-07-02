@@ -1,0 +1,15 @@
+fileFormatVersion: 2
+guid: 2c56ac2ceb7dcb946845c091f2f7464e
+NativeFormatImporter:
+  externalObjects: {}
+  mainObjectFileID: 2100000
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 259641
+  packageName: Simple Modular Dungeon
+  packageVersion: 2.0
+  assetPath: Assets/Simple Modular Dungeon/Components/Materials/Mats/Cauldron001.mat
+  uploadId: 708867

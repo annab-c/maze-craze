@@ -1,0 +1,15 @@
+fileFormatVersion: 2
+guid: 5758d03748c39174b9f0958b69e8ac08
+PrefabImporter:
+  externalObjects: {}
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 259641
+  packageName: Simple Modular Dungeon
+  packageVersion: 2.0
+  assetPath: Assets/Simple Modular Dungeon/Prefabs/Light Sources/Fire_Animated/Lit_Candle
+    Parent 001.prefab
+  uploadId: 708867

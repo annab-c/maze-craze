@@ -1,0 +1,15 @@
+fileFormatVersion: 2
+guid: ffa1a3524949b7844a04060cac65e076
+PrefabImporter:
+  externalObjects: {}
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 259641
+  packageName: Simple Modular Dungeon
+  packageVersion: 2.0
+  assetPath: Assets/Simple Modular Dungeon/Prefabs/Light Sources/Fire_Animated/Lit_Cauldron
+    Parent.prefab
+  uploadId: 708867

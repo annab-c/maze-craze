@@ -1,0 +1,15 @@
+fileFormatVersion: 2
+guid: 92f837e1b4efd8b4ab3bbf2c7d4e8546
+NativeFormatImporter:
+  externalObjects: {}
+  mainObjectFileID: 2100000
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 259641
+  packageName: Simple Modular Dungeon
+  packageVersion: 2.0
+  assetPath: Assets/Simple Modular Dungeon/Components/Materials/Mats/Bookshelf002.mat
+  uploadId: 708867
