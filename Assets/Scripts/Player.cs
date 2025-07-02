@@ -42,11 +42,15 @@ public class Player : MonoBehaviour
         controller.Move(move * moveSpeed * Time.deltaTime);
 
         // Gravity
-        if (controller.isGrounded && velocity.y < 0)
+        if (controller.isGrounded)
         {
+            // Slight downward push to keep grounded
             velocity.y = -2f;
         }
-        velocity.y += gravity * Time.deltaTime;
+        else
+        {
+            velocity.y += gravity * Time.deltaTime;
+        }
         controller.Move(velocity * Time.deltaTime);
 
         // Animations
