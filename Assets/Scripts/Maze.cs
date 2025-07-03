@@ -11,6 +11,7 @@ public class Maze : MonoBehaviour
     public MazePassage passagePrefab;
     public MazeWall[] wallPrefabs;
     public MazeDoor doorPrefab;
+	public MazeArch archPrefab;
 
     [Range(0f, 1f)]
     public float doorProbability;
@@ -58,21 +59,31 @@ public class Maze : MonoBehaviour
         return newCell;
     }
 
-	private void CreatePassage(MazeCell cell, MazeCell otherCell, MazeDirection direction)
+		private void CreatePassage(MazeCell cell, MazeCell otherCell, MazeDirection direction)
 	{
 		bool createDoor = Random.value < doorProbability;
 
-		MazePassage prefabForCell = createDoor ? doorPrefab : passagePrefab;
-		MazePassage prefabForOther = passagePrefab; // The other side always gets a simple passage
+		if (createDoor)
+		{
+			// Create MazeDoor for cell
+			MazeDoor door = Instantiate(doorPrefab) as MazeDoor;
+			door.Initialize(cell, otherCell, direction);
 
-		// Create passage for cell
-		MazePassage passage = Instantiate(prefabForCell) as MazePassage;
-		passage.Initialize(cell, otherCell, direction);
+			// Create MazeArch for otherCell
+			MazeArch arch = Instantiate(archPrefab) as MazeArch;
+			arch.Initialize(otherCell, cell, direction.GetOpposite());
+		}
+		else
+		{
+			// Regular passages on both sides
+			MazePassage passage = Instantiate(passagePrefab) as MazePassage;
+			passage.Initialize(cell, otherCell, direction);
 
-		// Create passage for otherCell
-		MazePassage oppositePassage = Instantiate(prefabForOther) as MazePassage;
-		oppositePassage.Initialize(otherCell, cell, direction.GetOpposite());
+			MazePassage oppositePassage = Instantiate(passagePrefab) as MazePassage;
+			oppositePassage.Initialize(otherCell, cell, direction.GetOpposite());
+		}
 	}
+
 
     private void CreateWall(MazeCell cell, MazeCell otherCell, MazeDirection direction)
     {
