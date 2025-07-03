@@ -21,7 +21,7 @@ MonoBehaviour:
     value: 1
   intensity:
     overrideState: 1
-    value: 0.328
+    value: 0.5
   size:
     overrideState: 0
     value: 1
@@ -65,10 +65,10 @@ MonoBehaviour:
     value: 1
   intensity:
     overrideState: 1
-    value: 0.29
+    value: 1.25
   color:
     overrideState: 1
-    value: {r: 0.24532752, g: 0.28681916, b: 0.3490566, a: 1}
+    value: {r: 0.47792813, g: 0.5280287, b: 0.5660378, a: 1}
   ambientOnly:
     overrideState: 0
     value: 1
