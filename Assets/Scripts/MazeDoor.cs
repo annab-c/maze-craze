@@ -25,10 +25,11 @@ public class MazeDoor : MazePassage
 
     void Update()
     {
-        // Simple example: press E to toggle (could be replaced with proximity checks later)
+
         if (Input.GetKeyDown(KeyCode.E))
         {
             opening = !opening;
+            Debug.Log("Toggle opening: " + opening);
         }
 
         if (opening)
@@ -40,6 +41,7 @@ public class MazeDoor : MazePassage
             hinge.localRotation = Quaternion.Lerp(hinge.localRotation, closedRotation, Time.deltaTime * speed);
         }
     }
+
 
     public override void Initialize(MazeCell primary, MazeCell other, MazeDirection direction)
     {

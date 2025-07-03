@@ -28,7 +28,8 @@ Transform:
   m_LocalPosition: {x: 0.302, y: 0.401, z: 0.4778862}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
-  m_Children: []
+  m_Children:
+  - {fileID: 175837615366436378}
   m_Father: {fileID: 5981154713176345904}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &4931208915375193617
@@ -42,8 +43,8 @@ GameObject:
   - component: {fileID: 2002987709288643139}
   - component: {fileID: 2895322758749253207}
   - component: {fileID: 8842894196699002141}
-  - component: {fileID: 5686538708280427407}
   - component: {fileID: 2610924964081525868}
+  - component: {fileID: 6151386516470939893}
   m_Layer: 0
   m_Name: Wall Cut
   m_TagString: Untagged
@@ -119,27 +120,6 @@ MeshRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_AdditionalVertexStreams: {fileID: 0}
---- !u!65 &5686538708280427407
-BoxCollider:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 4931208915375193617}
-  m_Material: {fileID: 0}
-  m_IncludeLayers:
-    serializedVersion: 2
-    m_Bits: 0
-  m_ExcludeLayers:
-    serializedVersion: 2
-    m_Bits: 0
-  m_LayerOverridePriority: 0
-  m_IsTrigger: 0
-  m_ProvidesContacts: 0
-  m_Enabled: 1
-  serializedVersion: 3
-  m_Size: {x: 1, y: 1, z: 1}
-  m_Center: {x: 0, y: 0, z: 0}
 --- !u!114 &2610924964081525868
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -890,11 +870,33 @@ MonoBehaviour:
   m_PreserveMeshAssetOnDestroy: 0
   assetGuid: 
   m_Mesh: {fileID: 0}
-  m_VersionIndex: 76
+  m_VersionIndex: 130
   m_IsSelectable: 1
   m_SelectedFaces: 
   m_SelectedEdges: []
   m_SelectedVertices: 
+--- !u!64 &6151386516470939893
+MeshCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4931208915375193617}
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_IsTrigger: 0
+  m_ProvidesContacts: 0
+  m_Enabled: 1
+  serializedVersion: 5
+  m_Convex: 0
+  m_CookingOptions: 30
+  m_Mesh: {fileID: 0}
 --- !u!1 &8035403054165664957
 GameObject:
   m_ObjectHideFlags: 0
@@ -905,7 +907,6 @@ GameObject:
   m_Component:
   - component: {fileID: 5981154713176345904}
   - component: {fileID: 8157152748608268721}
-  - component: {fileID: 7894899478240528859}
   m_Layer: 0
   m_Name: Maze Door
   m_TagString: Untagged
@@ -926,7 +927,6 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
-  - {fileID: 175837615366436378}
   - {fileID: 2002987709288643139}
   - {fileID: 6371617506850831039}
   m_Father: {fileID: 0}
@@ -947,36 +947,20 @@ MonoBehaviour:
   otherCell: {fileID: 0}
   direction: 0
   hinge: {fileID: 6371617506850831039}
---- !u!64 &7894899478240528859
-MeshCollider:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 8035403054165664957}
-  m_Material: {fileID: 0}
-  m_IncludeLayers:
-    serializedVersion: 2
-    m_Bits: 0
-  m_ExcludeLayers:
-    serializedVersion: 2
-    m_Bits: 0
-  m_LayerOverridePriority: 0
-  m_IsTrigger: 0
-  m_ProvidesContacts: 0
-  m_Enabled: 1
-  serializedVersion: 5
-  m_Convex: 0
-  m_CookingOptions: 30
-  m_Mesh: {fileID: 0}
+  openAngle: 90
+  speed: 2
 --- !u!1001 &8131896381968918122
 PrefabInstance:
   m_ObjectHideFlags: 0
   serializedVersion: 2
   m_Modification:
     serializedVersion: 3
-    m_TransformParent: {fileID: 5981154713176345904}
+    m_TransformParent: {fileID: 6371617506850831039}
     m_Modifications:
+    - target: {fileID: 3484367258555560233, guid: c41ce6c57e761324ba25b51cdf09af54, type: 3}
+      propertyPath: m_Enabled
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 8262697724841545840, guid: c41ce6c57e761324ba25b51cdf09af54, type: 3}
       propertyPath: m_LocalScale.x
       value: 0.5
@@ -991,15 +975,15 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 8262697724841545840, guid: c41ce6c57e761324ba25b51cdf09af54, type: 3}
       propertyPath: m_LocalPosition.x
-      value: 0.0067367554
+      value: -0.29527086
       objectReference: {fileID: 0}
     - target: {fileID: 8262697724841545840, guid: c41ce6c57e761324ba25b51cdf09af54, type: 3}
       propertyPath: m_LocalPosition.y
-      value: 0
+      value: -0.401
       objectReference: {fileID: 0}
     - target: {fileID: 8262697724841545840, guid: c41ce6c57e761324ba25b51cdf09af54, type: 3}
       propertyPath: m_LocalPosition.z
-      value: 0.4778862
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 8262697724841545840, guid: c41ce6c57e761324ba25b51cdf09af54, type: 3}
       propertyPath: m_LocalRotation.w
