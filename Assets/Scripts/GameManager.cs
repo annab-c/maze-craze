@@ -14,14 +14,6 @@ public class GameManager : MonoBehaviour
         StartCoroutine(BeginGame());
     }
 
-    private void Update()
-    {
-        if (Input.GetKeyDown(KeyCode.Space))
-        {
-            RestartGame();
-        }
-    }
-
     private IEnumerator BeginGame()
     {
         // Generate maze
@@ -45,7 +37,7 @@ public class GameManager : MonoBehaviour
         playerInstance = Instantiate(playerPrefab, centerCell.transform.position, Quaternion.identity);
     } 
 
-    private void RestartGame()
+    public void RestartGame()
     {
         StopAllCoroutines();
 
