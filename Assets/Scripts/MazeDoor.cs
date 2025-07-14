@@ -25,13 +25,6 @@ public class MazeDoor : MazePassage
 
     void Update()
     {
-
-        if (Input.GetKeyDown(KeyCode.E))
-        {
-            opening = !opening;
-            Debug.Log("Toggle opening: " + opening);
-        }
-
         if (opening)
         {
             hinge.localRotation = Quaternion.Lerp(hinge.localRotation, openRotation, Time.deltaTime * speed);
@@ -41,7 +34,6 @@ public class MazeDoor : MazePassage
             hinge.localRotation = Quaternion.Lerp(hinge.localRotation, closedRotation, Time.deltaTime * speed);
         }
     }
-
 
     public override void Initialize(MazeCell primary, MazeCell other, MazeDirection direction)
     {
@@ -54,4 +46,10 @@ public class MazeDoor : MazePassage
             hinge.localPosition = p;
         }
     }
+
+    public void ToggleDoor()
+    {
+        opening = !opening;
+    }
+
 }

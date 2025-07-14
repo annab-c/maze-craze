@@ -1,5 +1,6 @@
 using UnityEngine;
 using System.Collections;
+using TMPro; 
 
 public class GameManager : MonoBehaviour
 {
@@ -8,6 +9,8 @@ public class GameManager : MonoBehaviour
 
     public Player playerPrefab;
     private Player playerInstance;
+
+    public TextMeshProUGUI eText; // ← Assign your EText TMP here in Inspector!
 
     private void Start()
     {
@@ -35,7 +38,10 @@ public class GameManager : MonoBehaviour
 
         // Instantiate player at center
         playerInstance = Instantiate(playerPrefab, centerCell.transform.position, Quaternion.identity);
-    } 
+
+        // Pass the eText reference to player
+        playerInstance.eText = eText;
+    }
 
     public void RestartGame()
     {
