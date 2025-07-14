@@ -64,7 +64,7 @@ public class Player : MonoBehaviour
 
     void DoorLogic()
     {
-        Collider[] hits = Physics.OverlapSphere(transform.position, 0.4f);
+        Collider[] hits = Physics.OverlapSphere(transform.position, 0.2f);
         nearbyDoor = null;
 
         foreach (Collider hit in hits)

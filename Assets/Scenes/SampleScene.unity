@@ -677,7 +677,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 0, y: 19.79}
+  m_AnchoredPosition: {x: -0.4, y: 19.79}
   m_SizeDelta: {x: 179.79999, y: 40.200012}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1265795622
@@ -700,7 +700,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: Press E to open
+  m_text: Press E to interact
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 71cca277794154cea83c8e4c6511b450, type: 2}
   m_sharedMaterial: {fileID: -4543243557262808061, guid: 71cca277794154cea83c8e4c6511b450, type: 2}
@@ -765,7 +765,7 @@ MonoBehaviour:
   m_VertexBufferAutoSizeReduction: 0
   m_useMaxVisibleDescender: 1
   m_pageToDisplay: 1
-  m_margin: {x: 0, y: 4.8697205, z: 58.118256, w: 1.6263428}
+  m_margin: {x: 0, y: 4.8697205, z: -0.56933594, w: 1.6263428}
   m_isUsingLegacyAnimationComponent: 0
   m_isVolumetricText: 0
   m_hasFontAssetChanged: 0
@@ -1381,8 +1381,8 @@ AudioSource:
   m_Enabled: 1
   serializedVersion: 4
   OutputAudioMixerGroup: {fileID: 0}
-  m_audioClip: {fileID: 8300000, guid: 93a94ebb61ced4a0883e29ca76f97b06, type: 3}
-  m_Resource: {fileID: 8300000, guid: 93a94ebb61ced4a0883e29ca76f97b06, type: 3}
+  m_audioClip: {fileID: 8300000, guid: 6fa5264f7a4004c178ac27df5dd82f59, type: 3}
+  m_Resource: {fileID: 8300000, guid: 6fa5264f7a4004c178ac27df5dd82f59, type: 3}
   m_PlayOnAwake: 1
   m_Volume: 0.176
   m_Pitch: 1
